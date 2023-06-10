@@ -13,10 +13,20 @@
     <form action="/htmls/input_basicos.html" method="post">
 
         <label>Nome</label> <br>
-        <input type="text" name="nome" class="" id="" /> <br>
+        <input placeholder="Insira seu nome" type="text" name="nome" class="" id="" /> <br>
 
         <label>Senha</label> <br>
-        <input type="password" name="senha" /> <br>
+        <input placeholder="Insira sua senha" type="password" name="senha" /> <br><br>
+
+        <label>Time</label><br>
+        <input type="text" placeholder="Insira seu time" name="Time" list="Lista_de_Times"/>
+        <datalist id="Lista_de_Times">
+            <option value="Santos" />
+            <option value="Palmeiras" />
+            <option value="Corinthians" />
+                  
+        </datalist><br><br>
+
 
         <label>Opcoes</label>
         <input type="radio" name="opcao">A
