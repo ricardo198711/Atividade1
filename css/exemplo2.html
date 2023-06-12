@@ -6,15 +6,58 @@
     <title>Exemplo 2- CSS</title>
 
     <style>
-    h1{
-        color: red; font-size: 45px;
+    body{
+        background-color: salmon;
     }
+
+    h1{
+        color: red; 
+        font-size: 45px;
+
+     }
+
+     input {
+    
+    display: block;
+    margin: 20px;
+    background-color: seagreen;
+   
+    }
+
+    label{
+
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .trassos{
+        border: dashed 2px #000;
+        background-color: steelblue;
+
+    }
+    #campo_email{
+        height: 45px;
+    }
+
     </style>
 
 </head>
 
 <body>
     <h1>Exemplo CSS 2</h1>
+
+    <form action="" method="post">
+
+        <label>Nome</label>
+        <input type="text" name="nome" id="">
+
+       <label>E-mail</label>
+        <input class="trassos" id="campo_email"  name="e-mail" id="">
+
+        <label>Senha</label>
+        <input class="trassos" type="password" name="senha" id="">
+
+    </form>
 </body>
 
 </html>
