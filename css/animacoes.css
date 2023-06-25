@@ -1,0 +1,51 @@
+#linha1 {
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    background-color: #fff;
+    justify-content: space-evenly;
+}
+#linha1 > div {
+    background-color: aquamarine;
+    width: 25%;
+    padding: 1%;
+    height: 200px;
+    align-self: center;
+
+}
+#noticia1:hover {
+    height: 300px;
+    background-color: yellowgreen;
+}
+#noticia1 {
+    transition: height 2s;
+}
+#noticia2:hover {
+    height: 300px;
+    background-color: tomato;
+}
+#noticia2 {
+    transition: height 4s;
+}
+
+#noticia3:hover {
+    height: 300px;
+    background-color: yellow;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#noticia3 {
+    transition: height 6s;
+    
+}
+
+button {
+    background-color: yellowgreen;
+    padding: 20px;
+    border-radius: 20px 0px 20px 0px;
+    border: 0px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: yellow;
+}
