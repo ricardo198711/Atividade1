@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro JS</title>
+
+    <script>
+
+        function exibirAlerta() {
+           //alert('Meu primeiro Alerta vindo de um arquivo externo!');
+           document.getElementById('box').innerHTML='Meu primeiro Alerta vindo de uma funcao.'
+}
+
+    </script>
+
+    <style>
+        #box {
+            display: block;
+            width: 500px;
+            height: 500px;
+            color: blanchedalmond;
+            background-color: brown;
+        }
+    </style>
+   
+</head>
+<body>
+ 
+    <h1>Meu primeiro JS</h1>
+
+    <input onclick="javascript:exibirAlerta()" type="button" value="Vai!">
+
+    <div id="box">
+
+    </div>
+
+   
+</body>
+</html>
