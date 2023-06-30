@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #box1 {
+            background-color: brown;
+            width: 200px;
+            height: 200px;
+            padding: 20px;
+
+        }
+        .Paragrafo {
+            background-color: chartreuse;
+            font-size: 18px;
+            padding: 20px;
+        }
+    </style>
+
+    <script>
+        function funcaoTeste() {
+           //alert('Estou aqui.')
+           document.getElementById('box1').style.backgroundColor = 'blue';
+           document.getElementById('box1').style.textAlign = 'center';
+           document.getElementById('box1').style.color = '#FFF';
+
+           document.getElementsByClassName('Paragrafo')[1].style.backgroundColor = 'red';
+        }
+    </script>
+
+</head>
+<body>
+
+    <h1>Seletores</h1>
+
+    <div id="box1">
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt explicabo quia, facilis atque quasi mollitia maiores repudiandae ut vero ad aliquam. Laudantium ducimus dolore quaerat nulla sed, ex repudiandae quod.
+    </div>
+
+    <input type="button" value="ACIONAR" onclick="javascript:funcaoTeste();">
+
+    <p class="Paragrafo">Paragrafo1</p> <!--0-->
+    <p class="Paragrafo">Paragrafo2</p> <!--1-->
+    <p class="Paragrafo">Paragrafo3</p> <!--2-->
+
+</body>
+</html>
