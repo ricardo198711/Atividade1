@@ -27,7 +27,11 @@
            document.getElementById('box1').style.textAlign = 'center';
            document.getElementById('box1').style.color = '#FFF';
 
-           document.getElementsByClassName('Paragrafo')[1].style.backgroundColor = 'red';
+           document.getElementsByClassName('Paragrafo')[0].style.backgroundColor = 'red';
+           document.getElementsByClassName('Paragrafo')[1].style.backgroundColor = 'blue';
+           document.getElementsByClassName('Paragrafo')[2].style.backgroundColor = 'green';
+
+           alert('Estou sendo chamado')
         }
     </script>
 
@@ -45,6 +49,8 @@
     <p class="Paragrafo">Paragrafo1</p> <!--0-->
     <p class="Paragrafo">Paragrafo2</p> <!--1-->
     <p class="Paragrafo">Paragrafo3</p> <!--2-->
+
+    <input type="text" name="CPF" onchange="javascript:funcaoTeste()">
 
 </body>
 </html>
