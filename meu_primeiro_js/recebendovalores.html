@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+    function valida() {
+
+        
+            if(document.getElementById("idade").value == ''){
+                document.getElementById("idade").style.border = "solid 1px red";
+
+            }else {
+                var idadeUsiario = document.getElementById("idade").value
+                if(idadeUsiario <18) {
+                alert('cadastro apenas para maiores de 18.')
+             }
+           }
+
+            if(document.getElementById("nome").value == ''){
+                document.getElementById("nome").style.border = "solid 1px red";
+
+            }
+            if(document.getElementById("email").value == ''){
+                document.getElementById("email").style.border = "solid 1px red";
+
+             }
+
+            }
+    
+    </script>
+
+</head>
+<body>
+    <form action="">
+
+        Nome <br>
+        <input type="text" id="nome"><br><br>
+
+        Idade <br>
+        <input type="text" id="idade"><br><br>
+
+        Email <br>
+        <input type="text" id="email"><br><br>
+
+        <input type="button" onclick="valida()">
+
+    </form>
+</body>
+</html>
