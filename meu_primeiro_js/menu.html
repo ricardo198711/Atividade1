@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+</head>
+
+<script>
+    function inicial() {
+
+        for (let index = 0; index <= 9; index++){
+            document.getElementsByClassName('submenu')[index].style.display = "none";
+        }
+
+     }
+
+    function exibemenu() {
+        
+        if(document.getElementsByClassName('submenu')[0].style.display == 'none')
+
+            for (let index = 0; index <= 9; index++) {
+            document.getElementsByClassName('submenu')[index].style.display = "block";
+             
+    } else {
+        for (let index = 0; index <= 9; index++) {
+            document.getElementsByClassName('submenu')[index].style.display = "block";
+             
+    }
+    }
+        
+}
+
+</script>
+
+<style>
+    body{
+       font-size: 16px;
+       font-family: Arial, Helvetica, sans-serif;
+
+    }
+    
+    ul{
+       list-style: none;
+    }
+
+    .submenu{
+       background-color: chartreuse;
+       padding: 10px;
+    }
+</style>
+
+<body onload="inicial();">
+    <ul onclick="exibemenu();"> Menu
+        <li class="submenu">Item 1</li>
+        <li class="submenu">Item 2</li>
+        <li class="submenu">Item 3</li>
+        <li class="submenu">Item 4</li>
+        <li class="submenu">Item 5</li>
+    </ul>
+</body>
+</html>
